@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, ScrollView, SafeAreaView, Alert } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Icon from 'react-native-vector-icons/Entypo';
 import Voice from '@react-native-voice/voice';
 import { getAuth, createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 
@@ -138,7 +138,7 @@ const SignUpScreen = ({ navigation }) => {
 
 
                     <TouchableOpacity onPress={togglePasswordVisibility} style={styles.eyeIcon}>
-                        <Icon name={passwordVisibility ? 'eye-off' : 'eye'} size={24} color="#aaa" />
+                        <Icon name={passwordVisibility ? 'eye-with-line' : 'eye'} size={24} color="#aaa" />
                     </TouchableOpacity>
                 </View>
 
@@ -155,7 +155,7 @@ const SignUpScreen = ({ navigation }) => {
 
 
                     <TouchableOpacity onPress={togglePasswordVisibility} style={styles.eyeIcon}>
-                        <Icon name={passwordVisibility ? 'eye-off' : 'eye'} size={24} color="#aaa" />
+                        <Icon name={passwordVisibility ? 'eye-with-line' : 'eye'} size={24} color="#aaa" />
                     </TouchableOpacity>
                 </View>
 
@@ -268,7 +268,7 @@ const styles = StyleSheet.create({
     eyeIcon: {
         position: 'absolute',
         right: 10,
-        top: 10,
+        top: 20,
         height: 24,
         width: 40,
         justifyContent: 'center',
